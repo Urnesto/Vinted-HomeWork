@@ -1,0 +1,60 @@
+@import "./index.scss";
+@import "normalize.css/normalize.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#root {
+  // @include flexbox;
+
+  min-height: 100dvh;
+}
+
+body {
+  background-color: $color-page-background;
+  font-family: Poppins, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border-width: 0;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
