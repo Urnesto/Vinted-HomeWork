@@ -4,6 +4,7 @@ import useFetch from "../../hooks/useFetchData";
 import useInfiniteScroll from "../../hooks/useInfiniteScroll";
 import LazyLoadImage from "../LazyLoadImage/LazyLoadImage";
 import { IPhoto } from "../../types";
+import Loader from "../Loader/loader";
 import styles from './Gallery.module.scss'
 
 const cx = classNames.bind(styles);
@@ -20,9 +21,9 @@ const Gallery = () => {
                 {data.map((photo: IPhoto, index: number) => (
                     <LazyLoadImage key={`${photo.id}-${index}`} photo={photo} />
                 ))}
+                    {loading && <Loader />}
                 </div>
             </div>
-            {loading && <p>Loading...</p>}
             {error && <p>Error fetching data.</p>}
             <div ref={observerRef} />
         </div>
