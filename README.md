@@ -1,6 +1,6 @@
 # Vinted Homework Assignment - Ernest Rimkevicius
 
-LIVE DEMO - 
+LIVE DEMO - https://vinted-home-work.vercel.app/
 
 Simple projectwith infinite scroll and lazy laod implemnetation 
 
@@ -33,8 +33,8 @@ Simple projectwith infinite scroll and lazy laod implemnetation
 ### Getting Started
 
 1. Clone or download the repository or download:
-git clone y repo
-cd infintie-scroll
+git clone https://github.com/Urnesto/Vinted-HomeWork.git
+cd Vinted-HomeWork
 
 2. Install dependencies:
    npm install or yarn install
